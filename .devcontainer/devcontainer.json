@@ -1,0 +1,21 @@
+{
+  "name": "Sohrab Portfolio Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "GitHub.copilot"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install --no-audit --no-fund || true",
+  "remoteUser": "vscode"
+}
